@@ -1,0 +1,7 @@
+<div class="container">
+  <ul class="row">
+    <li *ngFor='let item of postListArray' class="col-sm-3">
+      <app-post-list-item [post]="item" ></app-post-list-item>
+    </li>
+  </ul>
+</div>

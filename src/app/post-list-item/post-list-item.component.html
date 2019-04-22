@@ -1,0 +1,12 @@
+<div>
+  <h3>{{_post.title}}</h3><i class="fa fa-trash" aria-hidden="true" (click)="onDelete(_post.$key)"></i>
+  <p>{{_post.content}}</p>
+  <p>
+    <span class="col-sm-6">{{_post.creationDate}}</span>
+    <span class="col-sm-6">
+      <i class="fa fa-arrow-left" aria-hidden="true" (click)="updateLovelts(-1)"></i>
+       {{_lovelts}}
+      <i class="fa fa-arrow-right" aria-hidden="true" (click)="updateLovelts(+1)"></i>
+    </span>
+  </p>
+</div>
